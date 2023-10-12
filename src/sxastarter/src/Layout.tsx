@@ -35,6 +35,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
+		  
+		 <script type="text/javascript" src="/config.js" />
+		 <script type="text/javascript" src="https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.8.min.js" />
         ))}
       </Head>
 
