@@ -12,14 +12,14 @@ x.parentNode.insertBefore(s, x);
 // Initialize the Engage SDK
 s.addEventListener("load", async () => {
     var settings = {
-        clientKey: "<client_key_PLACEHOLDER>",
-        targetURL: "<stream_api_target_endpoint_PLACEHOLDER>",
-        pointOfSale: "<point_of_sale_PLACEHOLDER>",
-        cookieDomain: "<cookie_domain_PLACEHOLDER>",
+        clientKey: "33b84227fa50a93c827d9adbc3e73e79",
+        targetURL: "https://api-engage-eu.sitecorecloud.io",
+        pointOfSale: "Default",
+        cookieDomain: ".personalize-sandbox-basic.vercel.app",
         cookieExpiryDays: 365,
         forceServerCookieMode: false,
         includeUTMParameters: true,
-        webPersonalization: false /* boolean or object. See Settings object for all options. Default: false */
+        webPersonalization: true /* boolean or object. See Settings object for all options. Default: false */
     };
     engage = await window.Engage.init(settings);
     
