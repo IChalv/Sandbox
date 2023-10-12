@@ -37,9 +37,11 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
         ))}
         <script type="text/javascript" src="/config.js" async />
-        
-        <script type="text/javascript" src="https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.8.min.js" async />
-
+        <script
+        type="text/javascript"
+        src="https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.8.min.js"
+        async
+        />
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}
