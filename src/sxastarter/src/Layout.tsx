@@ -28,7 +28,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
 
   return (
-    <div>
+    <>
       <Scripts />
       <Head>
         <title>{fields?.Title?.value?.toString() || 'Page'}</title>
@@ -36,9 +36,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
         ))}
-        <script type="text/javascript" src="/config.js" async />
-        <script type="text/javascript" src="https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.8.min.js" async />
-</Head>
+      </Head>
+
       {/* root placeholder for the app, which we add components to using route data */}
       <div className={mainClassPageEditing}>
         <header>
@@ -51,9 +50,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           <div id="footer">{route && <Placeholder name="headless-footer" rendering={route} />}</div>
         </footer>
       </div>
-    </div>
+    </>
   );
 };
-
 
 export default Layout;
