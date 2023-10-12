@@ -36,8 +36,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
         ))}
-        <script type="text/javascript" src="/config.js" />
-        <script type="text/javascript" src="https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.6.min.js" async />
+        <script src="scripts/sitecore-engage.js"></script>
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}
