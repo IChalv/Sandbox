@@ -36,7 +36,8 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
         ))}
-        <script src="scripts/sitecore-engage.js" async />
+        // <script type="text/javascript" src="/config.js" async />
+        <script type="text/javascript" src="sitecore-engage.js" async />
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}
