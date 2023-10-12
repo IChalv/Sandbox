@@ -7,7 +7,7 @@ var _boxever_settings = {
     target: 'https://api.boxever.com/v1.2', // Replace with your API target endpoint specific to your data center region
     cookie_domain: '.personalize-sandbox-basic.vercel.app', // Replace with the top-level cookie domain of the website
     web_flow_target: "https://d35vb5cccm4xzp.cloudfront.net",
-    pointOfSale: "Default" // Replace with the point of sale you have configured in your tenant
+    pointOfSale: "default" // Replace with the point of sale you have configured in your tenant
 };
 
 // Import the Boxever library asynchronously
