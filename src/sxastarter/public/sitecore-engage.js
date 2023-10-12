@@ -25,4 +25,16 @@ s.addEventListener("load", async () => {
     
     // Send a VIEW event
     // ...
+    // VIEW event object
+    var event = {
+        channel: "WEB",
+        language: "EN",
+        currency: "EUR",
+        page: "Test"
+    };
+    // Send VIEW event
+    engage.pageView(event);
+    // For testing and debugging purposes only
+    console.log("Copy-paste the following line into Sitecore CDP > Guests > Search field:");
+    console.log("bid:", engage.getBrowserId());
 });
