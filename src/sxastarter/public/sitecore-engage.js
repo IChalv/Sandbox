@@ -5,7 +5,7 @@ var engage = undefined;
 var s = document.createElement("script");
 s.type = "text/javascript";
 s.async = true;
-s.src = "https://d1mj578wat5n4o.cloudfront.net/sitecore-engage-v.1.4.8.min.js";
+s.src = "https://d1mj578wat5n4o.cloudfront.net/sitecore-engage-v.1.4.1.min.js";
 var x = document.querySelector("script");
 x.parentNode.insertBefore(s, x);    
 
