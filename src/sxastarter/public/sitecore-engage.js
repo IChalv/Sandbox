@@ -14,7 +14,7 @@ s.addEventListener("load", async () => {
     var settings = {
         clientKey: "33b84227fa50a93c827d9adbc3e73e79",
         targetURL: "https://api-engage-eu.sitecorecloud.io",
-        pointOfSale: "Default",
+        pointOfSale: "default",
         cookieDomain: ".personalize-sandbox-basic.vercel.app",
         cookieExpiryDays: 365,
         forceServerCookieMode: false,
