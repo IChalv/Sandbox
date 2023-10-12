@@ -12,4 +12,4 @@
     e.type = "text/javascript", e.async = !0, e.src = "https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.8.min.js";
     var t = document.getElementsByTagName("script")[0];
     t.parentNode.insertBefore(e, t)
-}() < /script> 
+}() </script> 
